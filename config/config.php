@@ -9,9 +9,9 @@ define('UPLOAD_PATH', PUBLIC_PATH . '/uploads');
 define('UPLOAD_URL', '/uploads');
 
 define('DB_HOST', '127.0.0.1');
-define('DB_NAME', 'ibtsub_hub');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_NAME', 'snhgnltn_hub');
+define('DB_USER', 'snhgnltn_hub');
+define('DB_PASS', 'snhgnltn_hub');
 
 define('SITE_DEFAULT_TITLE', 'Ibtsub Hub');
 

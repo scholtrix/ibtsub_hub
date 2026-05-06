@@ -1,11 +1,11 @@
 -- Ibtsub Hub database schema
 -- Phase 1: DATABASE DESIGN for Registration + Admin Management System
 
-CREATE DATABASE IF NOT EXISTS ibtsub_hub
+CREATE DATABASE IF NOT EXISTS snhgnltn_hub
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_unicode_ci;
 
-USE ibtsub_hub;
+USE snhgnltn_hub;
 
 -- Admin users table
 CREATE TABLE IF NOT EXISTS users (
@@ -80,9 +80,11 @@ INSERT INTO courses (title, slug, description, price, duration) VALUES
   ('Computer Basics', 'computer-basics', 'Hands-on computer literacy training for beginners, covering Microsoft Office, internet usage, and foundational PC skills.', 25000.00, '6 weeks'),
   ('Full Stack Web Development', 'full-stack-web-development', 'Practical full stack development training including HTML, CSS, JavaScript, PHP, MySQL, and deployment essentials.', 50000.00, '12 weeks');
 
--- Seed default admin user placeholder
+-- Seed default admin user with sample credentials
+-- Username: admin
+-- Password: Admin@1234
 INSERT INTO users (username, email, password_hash, full_name, role) VALUES
-  ('admin', 'admin@ibtsubhub.com', '$2y$10$changeThisHashToYourOwnSecureHash', 'Ibtsub Hub Admin', 'admin')
+  ('admin', 'admin@ibtsubhub.com', '$2y$12$yYRxZHIi0i/tuIZBDDkBLeinyqfFXRlumrvdRw9FuSXqw7Cdi7qla', 'Ibtsub Hub Admin', 'admin')
   ON DUPLICATE KEY UPDATE username=username;
 
 -- Seed default settings for site content and payment integration

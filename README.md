@@ -15,7 +15,10 @@ A complete PHP MVC registration and management system for a physical training ce
 1. Import the database schema:
    - `mysql -u root -p < database/schema.sql`
 
-2. Configure database settings in `config/config.php`.
+2. Configure database settings in `config/config.php`. The project is pre-configured for:
+   - Database: `snhgnltn_hub`
+   - Username: `snhgnltn_hub`
+   - Password: `snhgnltn_hub`
 
 3. Set your web server document root to `public/`.
 
