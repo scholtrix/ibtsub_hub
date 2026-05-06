@@ -36,6 +36,18 @@ The initial admin user is seeded in `database/schema.sql` for demonstration. Upd
 - Set `paystack_public_key` and `paystack_secret_key` from the admin settings page.
 - Students can pay via Paystack on their dashboard once a registration exists.
 
+## GitHub Actions deployment
+
+This repository includes a GitHub Actions workflow at `.github/workflows/deploy.yml` that deploys the project to cPanel on every push to `main`.
+
+### Required repository secrets
+
+- `CPANEL_HOST` — your cPanel FTP hostname
+- `CPANEL_USERNAME` — your FTP username
+- `CPANEL_PASSWORD` — your FTP password
+
+If your cPanel uses a different FTP port, update the workflow accordingly.
+
 ## Project structure
 
 - `/app/controllers` — controller logic
