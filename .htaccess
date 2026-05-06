@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Prevent direct access to application directories
+RewriteRule ^(app|config|database|tests)(/|$) - [F,L,NC]
+
+# Redirect root requests to public folder
+RewriteRule ^$ public/ [L]
+RewriteRule !^public/ public%{REQUEST_URI} [L]

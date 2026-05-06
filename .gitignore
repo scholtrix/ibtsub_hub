@@ -1,0 +1,9 @@
+# Ignore uploaded passport images
+/public/uploads/
+
+# Ignore PHPStorm metadata
+.idea/
+
+# Ignore system files
+.DS_Store
+Thumbs.db

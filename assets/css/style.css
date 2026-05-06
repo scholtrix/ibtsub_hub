@@ -1,0 +1,46 @@
+body {
+    background: #f6fbf4;
+    color: #21311b;
+    min-height: 100vh;
+}
+
+.navbar, .bg-success {
+    background: #1f6f3f !important;
+}
+
+.btn-success {
+    background: #2f8e56;
+    border-color: #2f8e56;
+}
+
+.btn-success:hover, .btn-success:focus {
+    background: #256b43;
+    border-color: #256b43;
+}
+
+.card {
+    border: 0;
+}
+
+footer {
+    background: #162d18;
+}
+
+.badge {
+    font-size: 0.9rem;
+}
+
+input, textarea, select {
+    border-radius: 0.35rem;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav .nav-link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+}
