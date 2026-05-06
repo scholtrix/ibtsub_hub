@@ -3,6 +3,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.php [L,QSA]
 
-<FilesMatch "\.(php|phar)$">
-    Require all denied
-</FilesMatch>
+# Allow PHP entry through index.php while routing all other requests to it.
+# No file restrictions here, since PHP files are served through the front controller.
